@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - College Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about-specific.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <style>
+    .team-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: #0e0e0e;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 🔥 Always 2 members per row */
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-card h3 {
+  margin: 10px 0;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.team-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+.team-card p strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #ffcc00;
+}
+
+  </style>
+</head>
+<body>
+  <!-- <video autoplay muted loop id="bg-video">
+    <source src="video/loop4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video> -->
+
+
+  <nav>
+    <div class="logo">CollegeProject</div>
+    <ul>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" style="padding-top:120px; min-height:100vh; display:flex; justify-content:center; align-items:center;">
+    <div class="about-container glass">
+      <img src="img/projct1.jpg" alt="About Us">
+      <div class="about-text">
+        <h2>🌐About Us</h2>
+        <!-- <p>
+          This project was developed as part of our internship training program, where we learned to apply the concepts of web development in a real-world scenario. The main objective was to not only build a functional system but also to understand the complete development cycle — from planning and designing to coding, testing, and documentation.
+          Through this project, our team collaborated on different roles such as frontend design, backend development, database integration, and content preparation. Working together gave us the chance to explore modern design practices, responsive layouts, smooth animations, and efficient server-side logic.
+          The internship provided us with hands-on experience in solving practical challenges, improving problem-solving skills, and understanding how professional projects are structured. More importantly, it helped us build the habit of teamwork, clear communication, and sharing responsibilities to achieve a common goal.
+          This training project reflects not only our technical learning but also our ability to work as a team and deliver something meaningful.
+        </p> -->
+<p>
+  This <span style="color: #ff5733;">project</span> was developed as part of our <span style="color: #33c1ff;">internship</span> training program, where we learned to apply the concepts of <span style="color: #28a745;">web development</span> in a real-world scenario. The main objective was to not only build a <span style="color: #ff33a6;">functional system</span> but also to understand the complete <span style="color: #ffa533;">development cycle</span> — from planning and designing to coding, testing, and documentation.
+  
+  Through this <span style="color: #8e44ad;">project</span>, our team collaborated on different roles such as <span style="color: #f1c40f;">frontend design</span>, <span style="color: #3498db;">backend development</span>, <span style="color: #2ecc71;">database integration</span>, and <span style="color: #e67e22;">content preparation</span>. Working together gave us the chance to explore modern <span style="color: #e74c3c;">design practices</span>, responsive layouts, smooth animations, and efficient server-side logic.
+  
+  The internship provided us with hands-on experience in solving <span style="color: #1abc9c;">practical challenges</span>, improving <span style="color: #9b59b6;">problem-solving skills</span>, and understanding how professional projects are structured. More importantly, it helped us build the habit of <span style="color: #f39c12;">teamwork</span>, clear communication, and sharing responsibilities to achieve a common goal.
+  
+  This <span style="color: #c0392b;">training project</span> reflects not only our technical learning but also our ability to work as a team and deliver something <span style="color: #16a085;">meaningful</span>.
+</p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section" style="padding:100px 20px; text-align:center; background:#0e0e0e;">
+  <h2 class="section-title">Meet Our Team</h2>
+
+  <div class="team-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:30px; margin-top:40px;">
+    
+    <div class="team-card glass">
+      <img src="img/harsh.jpg" alt="Harsh Raj Singh">
+      <h3>Harsh Raj Singh</h3>
+      <p><strong>⭐🎨Team Leader & Frontend Developer</strong></p>
+      <p>Guided the team as leader and took responsibility for the main frontend work. Focused on creating the layout, styling the pages, and shaping the overall look of the website. Also supported teammates and helped align ideas to keep the project smooth and on track.</p>
+    </div>
+
+    <div class="team-card glass">
+      <img src="img/farhan.jpg" alt="Md Farhan Iqbal">
+      <h3>Md Farhan Iqbal</h3>
+      <p><strong>💻🛠️Frontend & Backend Developer</strong></p>
+      <p>Worked on both the frontend and backend of the project. Designed the user interface with a clean responsive theme and also built the database with file handling and server-side logic. Helped bring together design and functionality into one working system.</p>
+    </div>
+
+    <div class="team-card glass">
+      <img src="img/abhay.jpg" alt="Abhay Kumar Sharma">
+      <h3>Abhay Kumar Sharma</h3>
+      <p><strong>📝📖Content & Documentation</strong></p>
+      <p>Worked on writing and organizing the documentation for the project, so that every detail could be presented clearly. Contributed in preparing project content like descriptions and explanations. Also joined the team in testing the system, finding small issues, and suggesting improvements to make the project better.</p>
+    </div>
+
+    <div class="team-card glass">
+      <img src="img/reyaz.png" alt="Reyaz Ansari">
+      <h3>Riyaz Mia</h3>
+      <p><strong>📝📖Content & Documentation</strong></p>
+      <p>Worked on writing and organizing the documentation for the project, so that every detail could be presented clearly. Contributed in preparing project content like descriptions and explanations. Also joined the team in testing the system, finding small issues, and suggesting improvements to make the project better.</p>
+    </div>
+
+    <div class="team-card glass">
+      <img src="img/jiya.jpeg" alt="Jiya">
+      <h3>Jiya Kumari Singh</h3>
+      <p><strong>📝📖Content & Documentation</strong></p>
+      <p>Worked on writing and organizing the documentation for the project, so that every detail could be presented clearly. Contributed in preparing project content like descriptions and explanations. Also joined the team in testing the system, finding small issues, and suggesting improvements to make the project better.</p>
+    </div>
+    <div class="team-card glass">
+      <img src="img/tarun.jpg" alt="Tarun Prasad">
+      <h3>Tarun Prasad</h3>
+      <p><strong>📝📖Content & Documentation</strong></p>
+      <p>Worked on writing and organizing the documentation for the project, so that every detail could be presented clearly. Contributed in preparing project content like descriptions and explanations. Also joined the team in testing the system, finding small issues, and suggesting improvements to make the project better.</p>
+    </div>
+
+    </div>
+</section>
+
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 College Project. Built with ❤️ and creativity.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Animate all .glass elements on scroll
+    gsap.utils.toArray(".glass").forEach((el, i) => {
+      gsap.to(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: "top 85%",
+          toggleActions: "play none none reverse"
+        },
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        delay: i * 0.1
+      });
+    });
+  </script>
+
+</body>
+</html>
