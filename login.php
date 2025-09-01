@@ -2,7 +2,7 @@
 require "dbcon.php";
 if (!empty($_SESSION['username']))
 {
-  header('location:home.php');
+  header('location:index.php');
 }
 
 if(isset($_POST['login']))
@@ -18,7 +18,7 @@ if(isset($_POST['login']))
     {
       $_SESSION['id']=true;
       $_SESSION['username']=$row['name'];
-      header('location:home.php');
+      header('location:index.php');
 
     }
     else

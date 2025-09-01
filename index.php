@@ -1,6 +1,6 @@
 <?php
-require "dbcon.php";
-if (!empty($_SESSION['username']))
+ require "dbcon.php";
+ if (!empty($_SESSION['username']))
 {
   header('location:index.php');
 }
@@ -92,8 +92,8 @@ if (!empty($_SESSION['username']))
       </a>
       <a href="olx.php" class="glass project-card">
         <img src="img/olx.jpg" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>Short description of Project 2.</p>
+        <h3>AIEMP OLX</h3>
+        <p>Platform, designed to function as a dedicated online marketplace for students  It provides a secure and centralized environment where students can buy and sell items like used textbooks, electronics, and other personal goods directly within the college community.</p>
       </a>
     </div>
   </section>
@@ -105,6 +105,7 @@ if (!empty($_SESSION['username']))
           <img src="img/about.jpg" alt="About Us">
         </div>
         <div class="about-text">
+          <a href="about.html">
           <h2>About Us</h2>
           <p>Our college project is more than just a website — it’s a demonstration of creativity, teamwork, and technical skills. Inspired by <strong>glassmorphism</strong>, smooth animations, and responsive layouts.</p>
           <p>The goal is to showcase design & development working together to create engaging user experiences. This reflects the dedication and collaboration of students building impactful digital experiences.</p>
